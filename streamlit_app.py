@@ -14,4 +14,18 @@ st.write(os.path.getsize(path))
 
 df = pd.read_csv(path)
 
+st.write('''## Before mean-centring''')
 st.scatter_chart(df["pixel1"], df["label"])
+
+st.write('''## After mean-centring''')
+st.scatter_chart(df["pixel1"], df['label"])
+
+c = (df.T@df)/len(df)-df.mean()@df.mean().T
+
+lam,v = np.linalg.eigh(c)
+
+idx = np.algsort(lam)[::-1]
+lam = lam[idx]
+v = v[:, idx]
+
+
