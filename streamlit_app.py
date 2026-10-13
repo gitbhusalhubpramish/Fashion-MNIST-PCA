@@ -41,5 +41,6 @@ scatter = ax.scatter(x.iloc[:,0], x.iloc[:,1], c = df["label"], s=1, alpha=0.5, 
 ax.set_title("MNIST Data visulization")
 fig.colorbar(scatter, ax=ax, label="digital")
 
+st.write('''## Principle components visulization''')
 st.pyplot(fig)
 plt.close(fig)
