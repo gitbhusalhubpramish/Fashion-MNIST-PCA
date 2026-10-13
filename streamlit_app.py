@@ -17,6 +17,8 @@ df = pd.read_csv(path)
 st.write('''## Before mean-centring''')
 st.scatter_chart(df.iloc[:5000], x="pixel1", y="label")
 
+df = df-df.mean()
+
 st.write('''## After mean-centring''')
 st.scatter_chart(df.iloc[:5000], x="pixel1", y="label")
 
