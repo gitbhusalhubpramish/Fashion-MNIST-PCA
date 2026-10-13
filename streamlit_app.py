@@ -15,10 +15,10 @@ st.write(os.path.getsize(path))
 df = pd.read_csv(path)
 
 st.write('''## Before mean-centring''')
-st.scatter_chart(df["pixel1"].iloc[:5000], df["label"].iloc[:5000])
+st.scatter_chart(df.iloc[:5000], x="pixel1", y="label")
 
 st.write('''## After mean-centring''')
-st.scatter_chart(df["pixel1"].iloc[:5000], df["label"].iloc[:5000])
+st.scatter_chart(df.iloc[:5000], x="pixel1", y="label")
 
 c = (df.T@df)/len(df)-df.mean()@df.mean().T
 
