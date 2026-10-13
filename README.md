@@ -37,3 +37,15 @@ The flow looks like this:
 - **Calculate Covariance:** This finds/calculate the covariance matrix; matrix of how each feature is related to each other.
 - **Calculate eigenvalues and eginvector:** This is used to calculate principle component(it is kind of principal component) eignvector is considered as principal component when it is sorted in decending order with it's corresponding eigenvalues.
 - **Visulize:** Here we visulize the data by transforming the data by multipling it with principal component with higest variance(eigenvalues) then plot in a graph.
+
+## What I learnt
+
+I made this project to learn PCA of cource I have learnt this but I have learnt these stuff too:
+
+- PCA.
+- Streamlit.
+- numpy and matrix multipcation.
+
+## Some extra info...
+
+I have been learning meachine learning so I make notes and make atleast one for each. I have writtern a jupiter notebook to plan and make this work then I make a python script file with the help of streamlit so that I can host and support hackclub. Most of the progress is in my notebook. I made this to learn so it has very less AI implimented. I know how it works and why it works.
