@@ -1,0 +1,5 @@
+kagglehub
+streamlit
+pandas
+numpy
+matplotlib
