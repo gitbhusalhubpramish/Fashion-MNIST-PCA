@@ -27,3 +27,13 @@ This project mostly(almost all) uses python liberies or technology related to ma
 - matplotlib for datavisulization
 - streamlit for hosting and building app
 - Pandas for csv and data manipulation
+
+## How it works
+
+The flow looks like this:
+
+- **Fetch data:** Here it fetches the data from kaggle dataset.
+- **Mean Centring:** This is pre-processing stuff you do before finding principal components. It makes the mean of the data to 0. I don't have standerization :P.
+- **Calculate Covariance:** This finds/calculate the covariance matrix; matrix of how each feature is related to each other.
+- **Calculate eigenvalues and eginvector:** This is used to calculate principle component(it is kind of principal component) eignvector is considered as principal component when it is sorted in decending order with it's corresponding eigenvalues.
+- **Visulize:** Here we visulize the data by transforming the data by multipling it with principal component with higest variance(eigenvalues) then plot in a graph.
