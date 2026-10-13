@@ -30,4 +30,15 @@ idx = np.argsort(lam)[::-1]
 lam = lam[idx]
 v = v[:, idx]
 
+w = v[:,:2]
+x = df@w
 
+fig, ax = plt.subplots()
+
+scatter = ax.scatter(x.iloc[:,0], x.iloc[:,1], c = df["label"], s=1, alpha=0.5, cmap="tab10")
+
+ax.set_title("MNIST Data visulization")
+fig.colorbar(scatter, ax=ax, label="digital")
+
+st.pyplot(fig)
+plt.close(fig)
