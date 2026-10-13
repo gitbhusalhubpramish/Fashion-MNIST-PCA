@@ -24,7 +24,7 @@ c = (df.T@df)/len(df)-df.mean()@df.mean().T
 
 lam,v = np.linalg.eigh(c)
 
-idx = np.algsort(lam)[::-1]
+idx = np.argsort(lam)[::-1]
 lam = lam[idx]
 v = v[:, idx]
 
