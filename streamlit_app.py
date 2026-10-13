@@ -14,4 +14,4 @@ st.write(os.path.getsize(path))
 
 df = pd.read_csv(path)
 
-st.scatter_chart(df[["pixel1", "label"]])
+st.scatter_chart(df["pixel1"], df["label"])
