@@ -4,6 +4,7 @@ import streamlit as st
 import kagglehub
 from pathlib import Path
 import os
+import matplotlib.pyplot as plt
 
 path = kagglehub.dataset_download("zalando-research/fashionmnist", path="fashion-mnist_train.csv")
 print(path)
