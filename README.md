@@ -4,7 +4,7 @@ In this project I have applied PCA(Principal Component Anylasis) in [Fashion MNI
 
 <img src="visual.jpg"/>
 
-This image is just the final visulization of the PCA model.
+This image is just the final visulization of the PCA model. [Click here](fashion-mnist-pca-ilthlyynnldmohejzdxk58.streamlit.app) to see live preview.
 
 ## Small intro to PCA
 
