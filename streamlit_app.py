@@ -11,3 +11,7 @@ print(os.path.getsize(path) / (1024 * 1024), "MB")
 
 st.write(path)
 st.write(os.path.getsize(path))
+
+df = pd.read_csv(path)
+
+st.scatter_chart(df[:2])
